@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resturent website</title>
+    <link rel="stylesheet" href="res.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+</head> 
+<body>
+      <div class="top">
+            <div class="logo"><i>RohitRestorent</i></div>
+                <div class="nav">
+                    <a href="#" class="Home">Home</a>
+                    <a href="#" class="Menu">Menu</a>
+                    <a href="#" class="About">About</a>
+                    <a href="#" class="Home">location</a>
+                    <a href="#" class="contact">contact</a>
+            </div>
+            <div class="search">
+                <i class="fa-solid fa-search"></i>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+             <div class="heading">
+             <div class="left">
+                <p>Are You Hungry ?</p>
+                <h1>Don't wait</h1>
+                <p>Let start to order food now</p>
+                <button>click out menu</button>
+            </div>
+            <div class="right">
+                <div class="SocialMedia">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+      </div>
+      <div class="bottom">
+        <div class="menu">
+            <div id="food1" ></div>
+            <div id="food2" ></div>
+        </div>
+      </div>
+      <script  >
+        let food1s = document.getElementById('food1');
+let food2s = document.getElementById('food2');
+let foods = document.getElementById('food');
+
+food1s.addEventListener('click',()=>{
+    foods.style.backgroundImage="url('food.png')";
+})
+
+food2s.addEventListener('click',()=>{
+    foods.style.backgroundImage="url('food1.jpg')";
+})
+
+      </script>
+</body>
+</html>
